@@ -6,12 +6,12 @@
   "author": "",
   "type": "module",
   "main": "index.js",
-  "types": "./dist/index.d.ts",
-  "module": "./dist/index.mjs",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
     }
   },
   "scripts": {
